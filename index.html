@@ -1,64 +1,49 @@
 <html>
-    <head>
-        <title>
-             My favorite recipes
-        </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <link rel="stylesheet" href="food.css">
-    <body>
-        <div class="mainDiv">
-        <img class="headerImage" src="https://images.squarespace-cdn.com/content/v1/5c5c3833840b161566b02a76/1573133725500-Y5PCN0V04I86HDAT8AT0/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/WBC_7095.jpg?format=2500w" alt="headerImage"> 
-        <h1 class="centerTitle">Some delicious recipes</h1> 
-        <div class="dropdownMenu">
-          <!-- for appetizers -->
-          <div class="dropdown">
-            <button class="dropbtn">Appetizers</button>
-            <div class="dropdown-content">
-              <a href="appetizers.html">Link 1</a>
-              <a href="appetizers.html">Link 2</a>
-              <a href="appetizers.html">Link 3</a>
-            </div>
-          </div>
-          <!-- for main course -->
-          <div class="dropdown">
-            <button class="dropbtn">Main course</button>
-            <div class="dropdown-content">
-              <a href="maincourse.html">Link 1</a>
-              <a href="maincourse.html">Link 2</a>
-              <a href="maincourse.html">Link 3</a>
-            </div>
-          </div>
-          <!-- for desserts -->
-          <div class="dropdown">
-            <button class="dropbtn">Desserts</button>
-            <div class="dropdown-content">
-              <a href="desserts.html">Link 1</a>
-              <a href="desserts.html">Link 2</a>
-              <a href="desserts.html">Link 3</a>
-            </div>
-          </div>
-        </div>
-        
-        <h1> Check out some popular dishes</h1>
-        <div class="popularDishes">
-          <div id="popularDishesDiv">
-            <a href="https://tasty.co/recipe/peaches-n-cream-cheesecake"><img src= "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/217564.jpg?resize=300:*&output-format=webp&output-quality=auto"></a>
-            <h4> Peaches-n-cream-cheesecake</h4>
-          </div>
-          <div id="popularDishesDiv1">
-            <a href="https://tasty.co/recipe/peaches-n-cream-cheesecake"><img src= "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/217564.jpg?resize=300:*&output-format=webp&output-quality=auto"></a>
-            <h4> Peaches-n-cream-cheesecake</h4>
-          </div>
-          <div id="popularDishesDiv2">
-            <a href="https://tasty.co/recipe/peaches-n-cream-cheesecake"><img src= "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/217564.jpg?resize=300:*&output-format=webp&output-quality=auto"></a>
-            <h4> Peaches-n-cream-cheesecake</h4>
-          </div>
-        </div>
+
+<head>
+  <title>
+    My favorite recipes
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<link rel="stylesheet" href="food.css">
+
+<body>
+  <div class="mainDiv">
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="https://tasty.co/search?q=appetizers">Appetizers</a>
+      <a href="https://tasty.co/topic/one-pot">Main Course</a>
+      <a href="https://tasty.co/ingredient/chocolate">Desserts</a>
+    </div>
+    <img class="headerImage"
+      src="https://images.squarespace-cdn.com/content/v1/5c5c3833840b161566b02a76/1573133725500-Y5PCN0V04I86HDAT8AT0/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/WBC_7095.jpg?format=2500w"
+      alt="headerImage">
+    <h1 class="centerTitle">|| Some delicious recipes ||</h1>
+  
+    <div class="popularDishes">
+      <div id="popularDishesDiv">
+        <a href="https://tasty.co/recipe/homemade-chicken-tikka-masala"><img class="responsiveImage"
+            src="https://img.buzzfeed.com/video-api-prod/assets/d03461e6d185483da8317cf9ee03433e/BFV18861_ChickenTikkaMasala-ThumbA1080.jpg?resize=300:*&output-format=webp&output-quality=auto"></a>
+        <h4> Homemade chicken tikka masala</h4>
       </div>
-    </body>
+      <div id="popularDishesDiv">
+        <a href="https://tasty.co/recipe/cajun-seafood-pasta"><img class="responsiveImage"
+            src="https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/d003433fdbd542f7a3bcc5e212b78ad6.jpeg?resize=300:*&output-format=webp&output-quality=auto"></a>
+        <h4> Cajun Seafood Pasta</h4>
+      </div>
+      <div id="popularDishesDiv">
+        <a href="https://tasty.co/recipe/peaches-n-cream-cheesecake"><img class="responsiveImage"
+            src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/217564.jpg?resize=300:*&output-format=webp&output-quality=auto"></a>
+        <h4> Peaches n cream cheesecake</h4>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

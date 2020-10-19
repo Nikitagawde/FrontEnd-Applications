@@ -1,5 +1,5 @@
 .centerTitle{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     font-family: cursive;
     font-weight: bolder;
     text-align: center;
@@ -12,74 +12,69 @@
     align-content: center;
 }
 
-body { 
+.mainDiv{ 
     width: 100%;
     max-width: 1200px; 
     margin: 0 auto ; 
     align-items: center;
-  }
-.dropbtn{
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-  
-.dropdown{
-    position: relative;
-    display: inline-block;
-    padding: 20px;
-}
-  
-.dropdown-content{
-    display: none;
-    position: relative;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-.dropdown-content a:hover{background-color: #f1f1f1}
-  
-.dropdown:hover .dropdown-content{
-    display: inline;
-  }
-  
-.dropdown:hover .dropbtn{
-    background-color: #3e8e41;
+    /* border: 2px solid red; */
   }
 
-.dropdownMenu{
-    display: inline-block;
-    font-family: cursive;
-    text-align: center;
-}
-h1{
-  text-align: center;
-  font-family: cursive;
-  font-size: 40px;
-}
-.popularDishesDiv{
-  max-width: 33%;
+#popularDishesDiv{
+  /* max-width: 33%; */
   /* max-height: fit-content; */
-  margin: 3%;
-  border: 2px solid red;
+  margin: auto;
+  /* border: 5px solid red; */
   font-family: cursive;
+  font-weight: bolder;
+  image-orientation: inherit;
 }
+#popularDishesDiv h4{
+  font-size: x-large;
+}
+#popularDishesDiv img:hover{
+  background-color: lightcoral;
+}
+
 .popularDishes{
   display: flex;
   text-align: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   align-items: center;
-
+  max-width: 100%;
+  max-height: 50%;
+  position: relative;
+  margin:0 auto;
+  line-height: 1.4em;
+}/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */    
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 0;
 }
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: red;
+}
+
+.responsiveImage{
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 500px) { 
+  
+  .popularDishesDiv, 
+  .popularDishesDiv, 
+  .popularDishesDiv { 
+      width: 70%; 
+  } 
+} 
